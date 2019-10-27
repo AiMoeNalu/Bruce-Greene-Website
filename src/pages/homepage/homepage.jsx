@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 
 import './homepage.scss';
 
-import SocialMediaIconLinks from '../../components/Social-Media/Icon-Links/SocialMediaIconLinks';
-import SOCIAL_MEDIA from '../../assets/Social-Media/data';
+import SocialMediaNav from '../../components/Social-Media/Social-Media-Nav/SocialMediaNav';
 
 class Homepage extends Component {
 
@@ -11,10 +10,14 @@ class Homepage extends Component {
         return(
             <div className='homepage'>
                 <header>
-                    <div className='social-media'>
-                        {
-                            SOCIAL_MEDIA.map(({id, name, icon, link}) => <SocialMediaIconLinks key={id} name={name} icon={icon} link={link} />)
-                        }
+                    <div className="header-components left-side-component">
+                        <SocialMediaNav/>
+                    </div>
+                    <div className='header-components bruce-logo'>
+                        <img src={require('../../assets/img/littlebrucebig.png')} alt='littlebruciebig' height='150px'/>
+                    </div>
+                    <div className='header-components right-side-component'>
+                        Login
                     </div>
                 </header>
                 <div className="main-content">
