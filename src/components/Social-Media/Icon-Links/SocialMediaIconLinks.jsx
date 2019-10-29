@@ -1,3 +1,7 @@
+/*
+Component which displays individual Social Media Icon with clickable link
+*/
+
 import React from 'react';
 
 import './SocialMediaIconLinks.scss';

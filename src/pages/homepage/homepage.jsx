@@ -17,7 +17,7 @@ class Homepage extends Component {
                         <img src={require('../../assets/img/littlebrucebig.png')} alt='littlebruciebig' height='150px'/>
                     </div>
                     <div className='header-components right-side-component'>
-                        Login
+                        Login {/**To-Do: CREATE NAV-BAR-MENU (ie: Login, Donate, etc ) */}
                     </div>
                 </header>
                 <div className="main-content">

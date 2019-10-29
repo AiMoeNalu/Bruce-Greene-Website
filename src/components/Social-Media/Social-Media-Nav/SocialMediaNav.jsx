@@ -1,3 +1,7 @@
+/*
+Component that composes the Icon-Links together
+*/
+
 import React from 'react';
 
 import './SocialMediaNav';

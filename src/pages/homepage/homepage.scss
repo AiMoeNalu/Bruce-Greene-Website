@@ -1,7 +1,6 @@
 header {
   border: 3px solid black;
   display: flex;
-  justify-content: space-between;
   align-content: center;
   width: 100vw;
   position: relative;
@@ -11,8 +10,26 @@ header {
   margin-right: -50vw;
   height: 200px;
   .header-components {
-    width: fit-content;
+    display: flex;
+    justify-content: space-between;
     align-self: center;
-    top: 50%; 
   }
+  
+  .left-side-component{
+    justify-content: flex-start;
+    margin-left: 15px;
+    flex-grow: 1;
+  }
+
+  .right-side-component{
+    justify-content: flex-end;
+    margin-right: 15px;
+    flex-grow: 1;
+  }
+
+  .bruce-logo {
+    justify-content: space-around;
+     flex-grow: 2;
+  }
+
 }
