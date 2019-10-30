@@ -1,35 +1,6 @@
-header {
-  border: 3px solid black;
+.homepage {
   display: flex;
-  align-content: center;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  height: 200px;
-  .header-components {
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
-  }
-  
-  .left-side-component{
-    justify-content: flex-start;
-    margin-left: 15px;
-    flex-grow: 1;
-  }
-
-  .right-side-component{
-    justify-content: flex-end;
-    margin-right: 15px;
-    flex-grow: 1;
-  }
-
-  .bruce-logo {
-    justify-content: space-around;
-     flex-grow: 2;
-  }
-
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 80px;
 }

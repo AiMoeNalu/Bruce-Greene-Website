@@ -1,15 +1,44 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+
 import './App.css';
 
-import Homepage from './pages/homepage/homepage';
+import HomePage from './pages/homepage/homepage';
+import Header from './components/header/header';
+import { auth } from './firebase/firebase.utils';
 
-class App extends Component {
+class App extends React.Component {
+ constructor(props){
+   super(props);
+
+   this.state = {
+     currentUser: null
+   }
+ }
+
+unsubscribeFromAuth = null;
+
+componentDidMount(){
+  this.unsubscribeFromAuth = auth.onAuthStateChanged(user => {
+    this.setState({currentUser: user});
+    console.log(user);
+  });
+}
+
+componentWillUnmount(){
+  this.unsubscribeFromAuth();
+}
 
   render() {
-    return (
-      <div className="App">
-        <Homepage/>
-      </div>
+      return (
+      <Router>
+      <div className='app'>
+          <Header currentUser={this.state.currentUser} />
+          <Switch>
+            <Route exact={true} path='/' component={HomePage}/>
+          </Switch>
+        </div>
+      </Router>
     );
   }
 }

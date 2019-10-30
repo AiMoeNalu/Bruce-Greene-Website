@@ -8884,7 +8884,7 @@ react-dev-utils@^9.1.0:
     strip-ansi "5.2.0"
     text-table "0.2.0"
 
-react-dom@^16.11.0:
+react-dom@^16.0.0, react-dom@^16.11.0:
   version "16.11.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.11.0.tgz#7e7c4a5a85a569d565c2462f5d345da2dd849af5"
   integrity sha512-nrRyIUE1e7j8PaXSPtyRKtz+2y9ubW/ghNgqKFHHAHaeP0fpF5uXR+sq8IMRHC+ZUxw7W9NyCDTBtwWxvkb0iA==
@@ -8999,7 +8999,16 @@ react-scripts@3.2.0:
   optionalDependencies:
     fsevents "2.0.7"
 
-react@^16.11.0, react@^16.4.1:
+react-twitch-embed-video@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/react-twitch-embed-video/-/react-twitch-embed-video-1.1.2.tgz#3970c7af3731838b8a6fa5bb725058001ddf3843"
+  integrity sha512-LluhBtrcXBKbVispHHLuWLFyI9jGGJVJ/tAryxDuKsYWcoM2Q0xdLzjsUTiBFYqku5FsGzLUBpKqbOlFZLHWKQ==
+  dependencies:
+    react "^16.0.0"
+    react-dom "^16.0.0"
+    window-or-global "^1.0.1"
+
+react@^16.0.0, react@^16.11.0, react@^16.4.1:
   version "16.11.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.11.0.tgz#d294545fe62299ccee83363599bf904e4a07fdbb"
   integrity sha512-M5Y8yITaLmU0ynd0r1Yvfq98Rmll6q8AxaEe88c8e7LxO8fZ2cNgmFt0aGAS9wzf1Ao32NKXtCl+/tVVtkxq6g==
@@ -10863,6 +10872,11 @@ wide-align@^1.1.0:
   integrity sha512-QGkOQc8XL6Bt5PwnsExKBPuMKBxnGxWWW3fU55Xt4feHozMUhdUMaBCk290qpm/wG5u/RSKzwdAC4i51YigihA==
   dependencies:
     string-width "^1.0.2 || 2"
+
+window-or-global@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/window-or-global/-/window-or-global-1.0.1.tgz#dbe45ba2a291aabc56d62cf66c45b7fa322946de"
+  integrity sha1-2+RboqKRqrxW1iz2bEW3+jIpRt4=
 
 window-size@^0.1.4:
   version "0.1.4"
