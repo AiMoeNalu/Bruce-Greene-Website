@@ -6,7 +6,9 @@ import LiveTwitchFeed from '../../components/live-twitch-feed/live-twitch-feed';
 
 const Homepage = () => (
     <div className='homepage'>
-        <LiveTwitchFeed/>        
+        <div className='bruce-twitch-feed'>
+            <LiveTwitchFeed />        
+        </div>
     </div>
 );
 

@@ -31,14 +31,16 @@ componentWillUnmount(){
 
   render() {
       return (
-      <Router>
       <div className='app'>
-          <Header currentUser={this.state.currentUser} />
-          <Switch>
-            <Route exact={true} path='/' component={HomePage}/>
-          </Switch>
-        </div>
-      </Router>
+        <Router>
+        <div className='app'>
+            <Header currentUser={this.state.currentUser} />
+            <Switch>
+              <Route exact={true} path='/' component={HomePage}/>
+            </Switch>
+          </div>
+        </Router>
+      </div>
     );
   }
 }
