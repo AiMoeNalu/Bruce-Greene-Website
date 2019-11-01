@@ -1,8 +1,9 @@
 .header {
+    box-sizing: content-box;
     height: 70px;
-    width: 100%;
+    width: 100vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 25px 0;
   
     .social-nav {
