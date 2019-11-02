@@ -3,8 +3,19 @@
   flex-direction: column;
   align-items: center;
   padding: 20px 80px;
-  .bruce-twitch-feed{
-    border: 20px solid black;
-    border-radius: 1%;
+  .row-one{
+    display: flex;
+    .bruce-twitch-feed{
+      flex: 1;
+      margin-right: 25px;
+      border: 20px solid black;
+      border-radius: 15px;
+    }
+    .donate{
+      display: flex;
+      flex: 1;
+      float: left;
+      margin-right: 15px;
+    }
   }
 }

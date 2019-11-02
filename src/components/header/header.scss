@@ -15,7 +15,8 @@
     .logo-container {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
+      margin: 0 calc(auto-10px);
     }
   
     .options {
@@ -23,9 +24,15 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
+      font-weight: bold;
   
       .option {
+        text-decoration: none;
+        color: black;
         padding: 10px 15px;
+        cursor: pointer;
+      }
+      .option:hover{
         cursor: pointer;
       }
     }
