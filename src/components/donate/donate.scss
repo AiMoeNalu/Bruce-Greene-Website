@@ -11,12 +11,15 @@ input[type=time]::-webkit-outer-spin-button {
 }
 
 .donate-container{
- align-items: stretch;
+  align-items: stretch;
   padding: 10px;
   border: 3px solid black;
   border-radius: 15px;
   .username-container{
     padding: 10px 0;
+    display: flex;
+    place-content: center;
+    input{ width: auto};
   }
   .amount-container{
     padding: 10px 0;
@@ -27,6 +30,9 @@ input[type=time]::-webkit-outer-spin-button {
       .currency-icon{
         display: flex;
         justify-content: center;
+      }
+      .amount-input{
+        width: auto;
       }
     }
     input{

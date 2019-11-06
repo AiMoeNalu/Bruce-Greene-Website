@@ -35,7 +35,14 @@ class Donate extends React.Component {
                             USD
                         </div>
                     </div>
-                    <input type="number" name='amount' min="0.01" step="0.01" max="2500" placeholder='2.00' />
+                    <InputMask  
+                    className='amount-input' 
+                    type="text" 
+                    name='amount' 
+                    mask='$.99'
+                    maskChar=' '
+                    placeholder='$2.00' 
+                    />
                 </div>
                 <div className='message-container'>
                     <textarea type='text' name='msg' placeholder='Donation Message' maxLength='255' rows='4'/><br/>
